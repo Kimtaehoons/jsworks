@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교(관계)연산자</title>
+</head>
+<body>
+    <h3>비교연산자</h3>
+    <script>
+        var x = 7;
+        var y = 4;
+        var z = "7";
+        //콘솔에 결과값 출력
+        console.log(x > y); //검사-console에서 true또는 false값 확인 가능, 비교연산자는 true,false로 나온다
+        console.log(x < y); // 7 < 4 false
+        console.log(x == y); // 7 == 4 false
+        console.log(x != y); // 7 != 4 true("!="" 다르다)
+        console.log(x == z); // true 값 출력, 자바스크립트 오류(숫자 == 문자형태이므로 false여야 함)
+        console.log(x === z) // false 값 출력, 정확(그러므로 "==="이 옳은 연산자), 문자와 숫자연산자끼리의 비교 시에는 "==="을 쓴다)
+       
+    </script>
+</body>
+</html>

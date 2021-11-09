@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 처리</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .access{
+            color: #f00;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h3>두 수의 합 계산하기</h3>
+    <!-- 숫자 직접 입력
+    <script>
+        var n1 = 10;
+        var n2 = 11;
+        var result;
+        result = n1 + n2
+        document.write("두 수의 합 : " + result)
+    </script> -->
+    <script>
+        var n1 = prompt("첫 번째 수 입력 : ");
+        var n2 = prompt("두 번째 수 입력 : ");
+        var result;
+        // result = n1 + n2(n1, n2가 문자이므로 연결형태로 출력됨)
+        result = parseFloat(n1) + parseFloat(n2);//숫자를 계산할 때는 parseFloat를 쓴다
+        document.write("두 수의 합 : " + "<span class='access'>" + result + "</span>");
+    </script>
+</body>
+</html>

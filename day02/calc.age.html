@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이 계산 프로그램</title>
+</head>
+<body>
+    <h3>나이 계산 프로그램</h3>
+    <script>
+        //(입력)필요한 변수 선언 및 초기화(값 저장)
+        const CURRENT_YEAR = 2021;
+        var birthYear = prompt("태어난 연도를 입력하세요(yyyy)", "");
+        var age;
+        //(처리)계산하기(나이(age)(변수) = 현재년도(currentYear)(상수)- 태어난년도(birthYear)(변수))
+        age = CURRENT_YEAR - birthYear +1;
+        //(출력)출력하기
+        document.write(CURRENT_YEAR + "년 현재<br>");
+        document.write(birthYear + "년에 태어난 사람의 나이는 " + age + "세 입니다");
+    </script>
+</body>
+</html>

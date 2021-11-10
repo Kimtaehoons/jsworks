@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자리 배치 프로그램</title>
+</head>
+<body>
+    <h3>자리 배치 프로그램</h3>
+    <script>
+        /*
+        문제 : 입장객 수에 따른 좌석의 줄(행) 수 계산하기
+        해결 : 좌석 줄(행) 수 = 입장객 / 좌석 열 수
+        나누기 "/" 연산자, 나머지 "%" 연산자 사용
+        오류가 생길 떄, 안 생길 때(결과 값 반영)
+        */
+        
+        //변수 생성
+        var customerNum = prompt("입장객은 몇 명인가요?");
+        var columnNum = prompt("한 줄에 몇 명 안나요?");
+        var rowNum = 0;//초기화
+        //처리(오류가 나올 가능성까지 반영)
+        if(customerNum == null || columnNum ==null){
+        /* 프롬프트 창이 두 개 뜨기 때문에 오류도 두 번까지 생길 수 있어 or로 연결함 */
+            document.write("입력이 취소되었습니다");
+        }
+        
+        else{
+            if(customerNum % columnNum == 0){
+            rowNum = customerNum / columnNum;
+            //나누어 떨어지면(나머지가 0이면)
+            }
+            else{
+            rowNum = parseInt(customerNum / columnNum) + 1;
+            //나누어 떨어지지 않으면(나머지가 있으면)
+            //palseInt() - 정수로 변환하는 함수
+            }
+        }
+        //출력
+        document.write(rowNum + '개의 줄이 필요합니다');
+    </script>
+</body>
+</html>

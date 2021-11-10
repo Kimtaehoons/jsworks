@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else구문 사용</title>
+    <style>p{color: brown; font-weight: 2px;}</style>
+</head>
+<body>
+    <h3>if else문 사용하기</h3>
+    <script>
+        //나이가 15세 이상이면 "관람가", 아니면 "관람불가"를 출력하는 프로그램
+        //입력(저장)
+        // var age = 15;//(개발자 직접입력)
+        var age = prompt("나이를 입력하세요", "15");//(클라이언트 개별입력)
+
+        //처리(계산)-순차적이냐 분기문으로 작성할 것이냐
+        if(age >= 15){
+            document.write("<p>관람가</p>");
+        }
+        else{
+            document.write("<p>관람불가</p>");
+        }
+        
+        //결과(출력)-alert이나 document.write로(여기서는 처리가 안 되는 경우도 출력되게끔 함)
+        document.write("나이는 " + age + "세 입니다");
+    </script>
+</body>
+</html> 

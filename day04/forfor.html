@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩 for문(1)</title>
+</head>
+<body>
+    <script>
+        var i = 0, j = 0
+
+        //행, 열 값 출력
+        for(i = 1; i <= 5; i++){
+            for(j = 1; j <=5; j++){
+                document.write('*');
+            }
+            document.write('<br>')
+        }        
+        //i = 1(1행), j = 1(1열), 2, 3, 4, 5 - 행은 괄호 밖, 열은 괄호 안(j=5) 하면 빠져나와서(document.write(br)) i가 2인 경우를 찾으러 가게됨)
+
+        //직각 삼각형 모양 출력
+        for(i = 1; i <= 5; i++){
+            for(j = 1; j <= i; j++){
+                document.write('*');
+            }
+            document.write('<br>')
+        }        
+        //i = 1(1행), j = 1
+
+        //역 직각 삼각형 모양 출력
+        for(i = 1; i <= 5; i++){
+            for(j = 1; j <= 6 - i; j++){
+                document.write('*');
+            }
+            document.write('<br>')
+        }        
+        //i = 1(1행), j = 1, 2, 3, 4, 5
+    </script>
+    
+</body>
+</html>

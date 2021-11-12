@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 - for문</title>
+</head>
+<body>
+    <h3>반복문 - for문</h3>
+    <script>
+        //1부터 10까지의 곱을 계산하기(팩토리얼(계승))
+        var result = 1;//곱셈은 1로 초기화
+        for(var i = 1; i <= 5; i++){
+        result *= i;//result = result * i
+        }
+        document.write("결과 : " + result);
+        //i = 1, 1x2, result = 1
+        //i = 2, 1x2, result = 2
+        //i = 3, 2(=1x2)x3, result = 6
+        //i = 4, 6(1x2x3)x4, result = 24
+        //i = 5 24(1x2x3x4x5, result = 120
+    </script>
+</body>
+</html>

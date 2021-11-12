@@ -26,7 +26,7 @@ else{
             var seatNum = i * columnNum + j;
             //예를 들어, 입장객과 자리값이 입력값까지만 나오고 그 이외는 빠져나와야 한다
             //33까지만 원하면 거기까지만 break걸고 34는 안 찍히게 밖으로 빠져나오게 한다
-            if(seatNum > customerNum) break;{
+            if(seatNum > customerNum) break;{//좌석 수가 입장객 수보다 많아지면 빠져나오게 함
                 document.write("<td>좌석" + seatNum + "</td>");
             //if(seatNum == customerNum) break; 
             //위치에 따라 if문 true조건을 맞춰준다

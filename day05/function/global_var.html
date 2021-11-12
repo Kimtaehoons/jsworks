@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역변수의 유효 범위(함수와 연동할 때 변수 사용 유의)</title>
+</head>
+<body>
+    <h2>전역변수의 유효 범위</h2>
+    <script>
+        //1 증가 시키는 함수
+        //전역변수의 유효 범위 - 전역공간에서 생성(지역에 안 두고 전역에 두면(블럭을 벗어나서)) 프로그램이 종료되면 그 때 메모리에서 삭제됨
+        function oneUp(){
+            x++;
+            return x;
+        }
+        var x = 1;//프로그램의 실행순서는 여기서부터 진행되다가 oneUp에서 return이 궁금해질 때 위로 찾아간다
+        var num = oneUp();
+        document.write("num = " + num + "<br>");
+        var num = oneUp();
+        document.write("num = " + num + "<br>");
+        var num = oneUp();
+        document.write("num = " + num + "<br>");
+        document.write("x = " + x + "<br>");//return된 x는 oneUp에 값을 주고 사라짐. 정의되지 않은 x
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 정의와 호출</title>
+</head>
+<body>
+    <h2>구구단</h2>
+    <script>
+        //리턴이 없는 함수(ex)구구단 4단)
+        function gugudan(dan){
+            // var dan = 4;//매개변수 처리로 인한 삭제
+                for(var i = 1; i <= 9; i++){
+            document.write(dan + " x " + i + " = " + (dan * i) + "<br>");
+                }
+        }
+        //호출
+        gugudan(4);
+
+        /*
+        명시적 함수(이름있음)-리턴이 있는 함수(ex)제곱 수)
+        function square(x){
+            return x * x;
+        }
+        */
+        //(위에 작성된 명시적 함수와 같은 값을 호출하는 익명 함수로 작성하는 방법)
+        var square = function(x){//익명 함수(변수이름으로 호출)
+            return x * x
+        }        
+        //호출
+        var num = square(6);//제곱 수가 반환된 값
+        document.write("num = " + num + "<br>");
+        var x = 6//(return의 x값이 호출되고 없어지기 때문에 선언해줘야 오류가 나지 않음)
+        document.write("x = " + x);
+    </script>
+</body>
+</html>

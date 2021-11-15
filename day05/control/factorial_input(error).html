@@ -12,13 +12,13 @@
         //1부터 입력받은 수 까지의 곱을 계산하기(팩토리얼(계승))
         var num = prompt("숫자를 입력하세요", "1");
         var facto = 1;
-        var result = " ";
+        var result = " ";//문자를 초기화
         for(var i = 1; i <= num; i++){
             facto *= i;
         }
         result = num + "! = " + facto;        
         //결과
-        documents.write(result);
+        document.write(result);
     </script>
 </body>
 </html>

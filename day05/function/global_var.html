@@ -11,11 +11,13 @@
     <script>
         //1 증가 시키는 함수
         //전역변수의 유효 범위 - 전역공간에서 생성(지역에 안 두고 전역에 두면(블럭을 벗어나서)) 프로그램이 종료되면 그 때 메모리에서 삭제됨
+                              //x값이 계속 증가할 때
         function oneUp(){
-            x++;
+            //var x = 1;//지역 변수(x값이 고정됐을 때)
+            x += 1;
             return x;
         }
-        var x = 1;//프로그램의 실행순서는 여기서부터 진행되다가 oneUp에서 return이 궁금해질 때 위로 찾아간다
+        var x = 1;//전역 변수(main) - 프로그램의 실행순서는 여기서부터 진행되다가 oneUp에서 return이 궁금해질 때 위로 찾아간다
         var num = oneUp();
         document.write("num = " + num + "<br>");
         var num = oneUp();

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 사용</title>
+</head>
+<body>
+    <h2>함수의 사용</h2>
+    <button onclick="fnCheck()">로그인</button>
+    <p id = "demo"></p>
+    <script>
+        // function fnCheck(){//함수 만들고 나중에 부르면 됨
+        //     alert("아이디나 비밀번호가 일치하지 않습니다");
+        // }
+        //위의 값과 같은 다른 함수인 익명 함수로 표현
+            var fnCheck = function(){
+                // alert("아이디나 비밀번호가 일치하지 않습니다");
+                // document.write("아이디나 비밀번호가 일치하지 않습니다");//이렇게만 쓰면 출력되지 않는다. 
+                //p태그 등을 이용해서 그 자리에 값을 가져올 수 있도록 지정해줘야 한다(getElementById는 id로만 받을 수 있고, demo라는 값을 찾게끔해서)
+                document.getElementById("demo").innerHTML = "아이디나 비밀번호가 일치하지 않습니다";//p태그로 가서 demo의 값을 가져온다
+            }
+    </script>
+</body>
+</html>

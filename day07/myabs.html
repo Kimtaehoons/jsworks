@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>절대값 함수 만들기</title>
+</head>
+<body>
+    <h2>절대값 함수 만들기</h2>
+    <script>
+        function MyAbs(x){//나만의 절대값 함수 만들기
+            if(x < 0)
+                return -x;
+            else
+                return x;
+        }
+        function MySquare(x){//나만의 제곱수 함수 만들기
+            return x * x;
+        }
+        function MyPow(x, y){//나만의 거듭제곱 함수 만들기(x:밑, y:지수)
+            let num = 1;
+            for(let i = 0; i < y; i++){
+                num = num * x
+            }
+            //x=2, y=4
+            //i = 0, 0 < 4, num = 1 * 2
+            //i = 0, 1 < 4, num = 2 * 2
+            //i = 0, 2 < 4, num = 4 * 2
+            //i = 0, 3 < 4, num = 8 * 2
+            return num;
+        }
+        console.log(MyAbs(-4));
+        console.log(MySquare(8));
+        console.log(MyPow(2,4));
+    </script>
+</body>
+</html>

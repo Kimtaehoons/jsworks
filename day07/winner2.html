@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 당첨자 발표2</title>
+    <style>
+        body{text-align: center;}
+        h1{
+           
+            display: inline-block;
+            border: 1px solid #333;
+            padding: 10px;
+            background-color: #eee;
+        }
+        p{font-size: 1.2em;}
+        .access{
+            color: cornflowerblue;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>당첨자 발표</h1>
+    <script>
+        let member = prompt("전체 응모자 수 입력 : ");
+        let winner = prompt("당첨자 수 입력 : ")
+
+        document.write("<p>전체 응모자 수 : " + member + "명</p>");
+        document.write("<p>당첨자 : ");
+        for(let i = 1; i <= winner; i++){
+            let picked = Math.floor(Math.random() * member + 1);
+            //마지막 콤마 없애기
+            if(i < winner)
+            document.write("<span class='access'>" + picked + "</span>번, ");
+            else//(i == winner 즉, 마지막 번호)
+            document.write("<span class='access'>" + picked + "</span>번 ");
+        }        
+       
+    </script>
+</body>
+</html>

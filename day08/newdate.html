@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 객체 사용하기</title>
+</head>
+<body>
+    <h2>날짜/시간을 알려주는 Date 객체</h2>
+    <script>
+        //날짜 객체 생성
+        var now = new Date();
+        document.write("=====날짜=====<br>");
+        document.write("현재 : " + now +"<br>");
+        document.write("현재 : " + now.toLocaleString() +"<br>");
+        document.write("현재 시간 : " + now.toLocaleTimeString() +"<br>");
+        document.write("현재 년도 : " + now.getFullYear() +"<br>");
+        document.write("현재 월 : " + (now.getMonth() + 1) +"<br>");
+        document.write("현재 일 : " + now.getDate() + "<br>");
+        document.write("현재 요일 : " + now.getDay() +"<br>");
+        document.write("=====시간=====<br>");
+        document.write("현재 시간 : " + now.toLocaleTimeString() +"<br>");
+        //1970.01.01. 자정 이후가 유닉스 운영체제 기준
+        document.write("현재 시 : " + now.getHours() +"<br>");
+        document.write("현재 분 : " + now.getMinutes() +"<br>");
+        document.write("현재 초 : " + now.getSeconds() +"<br>");
+        document.write("현재 시간(초로 환산) : " + now.getTime() / 1000 +"<br>");
+        //컴퓨터는 기본적으로 ms(밀리초)(1000분의 1)로 되어 있어 1000을 나눠준다
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 onclick 속성 사용하기)</title>
+</head>
+<body>
+    <h2>객체의 onclick 속성 사용하기(태그가 아닌 스크립트에 작성)</h2>
+    <img src="./images/cup-1.png" alt="컵" id="pic">
+    <script>
+        var pic = document.querySelector("#pic");//변수에 담아서 pic 객체 생성
+        pic.onclick = changePic;
+        //changePic은 함수 괄호가 생략된다. 일반 함수는 펑션 호출하면 찾아가서 계속 실행되는데 객체를 통한 함수는 한 번씩만 일어나기 때문      
+        function changePic(){
+            pic.src = "images/cup-2.png";
+        }
+    </script>
+</body>
+</html>

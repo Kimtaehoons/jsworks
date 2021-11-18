@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동차 객체 만들기</title>
+</head>
+<body>
+    <h2>자동차 객체 만들기</h2>
+    <script>
+        var car = { 
+            brand : "현대",
+            name : "Sonata",
+            color : "black",
+            cc : 2500,
+            fuel : function(){
+                document.write("연료를 주입한다");
+            }
+        };
+        document.write(car.brand + " " + car.name + "<br>");
+        document.write("색상은 " + car.color + ", 배기량은 " + car.cc + "cc<br>");
+        //틀은 객체고 사용하려면 이름을 불러야 한다..
+        car.fuel();
+    </script>
+</body>
+</html>

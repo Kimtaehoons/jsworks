@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체를 만들고 사용하기</title>
+</head>
+<body>
+    <h2>객체의 정의와 사용</h2>
+    <script>
+        //선수 1명 객체를 정의
+        //속성 + 기능(함수)
+        //키(key) : 값(value) -> json데이터
+        var player = {
+            name : "추신수",   //속성(객체 안에서는 :으로 구분)
+            age : 40,
+            isMerreid : true,
+            play : function(){   //함수
+            alert("홈런을 친다!")
+        }
+        };
+        document.write("나이 : " + player.name + "<br>");    //객체를 부르고 .입력하면 속성들이 나타나고 출력이 가능해짐
+        document.write("이름 : " + player.age + "<br>");
+        document.write("결혼 : " + player.isMerreid + "<br>");
+        player.play();   //윈도우에서 창이 나오니 호출할 필요 없다
+    </script>
+</body>
+</html>

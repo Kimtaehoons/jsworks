@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리 예제</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <h2>어서오세요~ 방문을 환영합니다</h2>
+    <p class="info">내 이름은 천선란입니다</p>
+    <script>
+        //alert('hello'); js일 떄
+        //jquery일 때
+        // $(document).ready(function(){ 
+            //alert('안녕');
+        //});
+    </script>
+    <script>
+        //제이쿼리 기본 서식
+        //css() 객체함수 - 스타일을 바꿔줌
+        $(document).ready(function(){ 
+            $('h2').css('color', 'blue'); 
+            $('.info').css('background', 'lightgreen');
+        });
+    </script>
+</body>
+</html>

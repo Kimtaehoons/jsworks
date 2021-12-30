@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리 예제</title>
+    <script src="./jquery-3.6.0.js"></script>
+</head>
+<body>
+    <input type="text"  id="t_input">
+    <button type="button">입력</button>
+    <p>결과 <input type="text" id="t_output"></p>
+    <script>
+        $(document).ready(function(){
+            //처리
+            $("button").on('click', function(){ //입력 버튼을 누르면
+                //let text = $("#t_input").val(); //입력 상자에 들어온 문자, 숫자 값
+                //$("#t_output").val(text); //입력 상자의 값을 결과 상자에 출력 
+                //위의 두 부분으로 작성된 것을 하나로 작성
+                $("#t_output").val($("#t_input").val());
+            });
+        });
+    </script>
+</body>
+</html>
